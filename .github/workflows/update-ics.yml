@@ -1,4 +1,5 @@
 name: Update ICS File
+visibility: private
 
 on:
   schedule:
