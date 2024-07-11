@@ -15,7 +15,7 @@ jobs:
 
     - name: Download ICS file
       run: |
-        curl -o Sonnenstube.ics https://outlook.office365.com/owa/calendar/4518a988d0944fca94f5b205f98cdcd0@stiftung-maihof.ch/8e4b312b74c74655bd910cbf994abd5e254546330194211445/calendar.ics
+        curl -o Sonnenstube.ics https://outlook.office365.com/owa/calendar/4518a988d0944fca94f5b205f98cdcd0@stiftung-maihof.ch/510748a0c1de4e839b4289ac36d974177704059246271755894/calendar.ics
         curl -o Sunset.ics https://outlook.office365.com/owa/calendar/4287428fd7f544c7bca16df6dfb1ac96@stiftung-maihof.ch/be7d9df655e84117bedd640daf726d8c14969555720922775328/calendar.ics
         curl -o Cafeteria.ics https://outlook.office365.com/owa/calendar/b5ed77a50f4542c59bbb81751889d370@stiftung-maihof.ch/1473d21d1e784a3888dd7cd536b005e616889489424505442350/calendar.ics
         curl -o Saal.ics https://outlook.office365.com/owa/calendar/b56a89587f2540e5a11bbb36096d86a3@stiftung-maihof.ch/bf589cadc85c47febf66be7d1aa387ac13102600388834368974/calendar.ics
