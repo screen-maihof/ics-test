@@ -15,13 +15,24 @@ jobs:
 
     - name: Download ICS file
       run: |
-        curl -o yourfile.ics https://outlook.office365.com/owa/calendar/4287428fd7f544c7bca16df6dfb1ac96@stiftung-maihof.ch/be7d9df655e84117bedd640daf726d8c14969555720922775328/calendar.ics
+        curl -o Sonnenstube.ics https://outlook.office365.com/owa/calendar/4518a988d0944fca94f5b205f98cdcd0@stiftung-maihof.ch/8e4b312b74c74655bd910cbf994abd5e254546330194211445/calendar.ics
+        curl -o Sunset.ics https://outlook.office365.com/owa/calendar/4287428fd7f544c7bca16df6dfb1ac96@stiftung-maihof.ch/be7d9df655e84117bedd640daf726d8c14969555720922775328/calendar.ics
+        curl -o Cafeteria.ics https://outlook.office365.com/owa/calendar/b5ed77a50f4542c59bbb81751889d370@stiftung-maihof.ch/1473d21d1e784a3888dd7cd536b005e616889489424505442350/calendar.ics
+        curl -o Saal.ics https://outlook.office365.com/owa/calendar/b56a89587f2540e5a11bbb36096d86a3@stiftung-maihof.ch/bf589cadc85c47febf66be7d1aa387ac13102600388834368974/calendar.ics
+        curl -o Sonnhalde-Stuebli.ics https://outlook.office365.com/owa/calendar/d7268c93af504350be1de1c00bc3cad3@stiftung-maihof.ch/1a1c02dc3a134ae28c0fff6f50cd0a7b16897505493309632908/calendar.ics
+        curl -o Sitzungszimmer-Dienste.ics https://outlook.office365.com/owa/calendar/044eb8fe8865429984f5a1430bc58feb@stiftung-maihof.ch/52e7f4a47e344ef1b5eb1609f5826a8f8473981965959299703/calendar.ics
+        
 
     - name: Commit and push changes
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add yourfile.ics
+        git add Sonnenstube.ics
+        git add Sunset.ics
+        git add Cafeteria.ics
+        git add Saal.ics
+        git add Sonnhalde-Stuebli.ics
+        git add Sitzungszimmer-Dienste.ics
         git commit -m "Update ICS file - $(date)"
         git push
       env:
