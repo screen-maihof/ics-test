@@ -24,4 +24,4 @@ jobs:
         git commit -m "Update ICS file - $(date)"
         git push
       env:
-        GITHUB_TOKEN: ${{ secrets.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 }}
+        GITHUB_TOKEN: ${{ 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 }}
