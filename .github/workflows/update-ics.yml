@@ -1,5 +1,6 @@
-name: Update ICS File
 visibility: private
+name: Update ICS File
+
 
 on:
   schedule:
