@@ -22,7 +22,8 @@ jobs:
         curl -o Saal.ics https://outlook.office365.com/owa/calendar/b56a89587f2540e5a11bbb36096d86a3@stiftung-maihof.ch/bf589cadc85c47febf66be7d1aa387ac13102600388834368974/calendar.ics
         curl -o Sonnhalde-Stuebli.ics https://outlook.office365.com/owa/calendar/d7268c93af504350be1de1c00bc3cad3@stiftung-maihof.ch/1a1c02dc3a134ae28c0fff6f50cd0a7b16897505493309632908/calendar.ics
         curl -o Sitzungszimmer-Dienste.ics https://outlook.office365.com/owa/calendar/044eb8fe8865429984f5a1430bc58feb@stiftung-maihof.ch/52e7f4a47e344ef1b5eb1609f5826a8f8473981965959299703/calendar.ics
-        
+        curl -o SiZi-Geschaeftstelle-3OG.ics https://outlook.office365.com/owa/calendar/890ad2b9bb6245b0b24b5936257fdccb@stiftung-maihof.ch/d9c40306caae43eabd669b6a47b536503658051943895603239/calendar.ics
+        curl -o SiZi3OG-Gang.ics https://outlook.office365.com/owa/calendar/0a9f076ddbf44d1097bfcf889db6d3d8@stiftung-maihof.ch/d0fcb80f8ceb4a07a62ad4ef242ea91a6483855062878795025/calendar.ics
 
     - name: Commit and push changes
       run: |
@@ -34,6 +35,10 @@ jobs:
         git add Saal.ics
         git add Sonnhalde-Stuebli.ics
         git add Sitzungszimmer-Dienste.ics
+        git add SiZi-Geschaeftstelle-3OG.ics
+        git add SiZi3OG-Gang.ics
+
+        
         git commit -m "Update ICS file - $(date)"
         git push
       env:
