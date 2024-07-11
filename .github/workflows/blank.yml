@@ -14,13 +14,13 @@ jobs:
 
     - name: Download ICS file
       run: |
-        curl -o cal1.ics https://outlook.office365.com/owa/calendar/4287428fd7f544c7bca16df6dfb1ac96@stiftung-maihof.ch/be7d9df655e84117bedd640daf726d8c14969555720922775328/calendar.ics
+        curl -o yourfile.ics https://outlook.office365.com/owa/calendar/4287428fd7f544c7bca16df6dfb1ac96@stiftung-maihof.ch/be7d9df655e84117bedd640daf726d8c14969555720922775328/calendar.ics
 
     - name: Commit and push changes
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add cal1.ics
+        git add yourfile.ics
         git commit -m "Update ICS file - $(date)"
         git push
       env:
