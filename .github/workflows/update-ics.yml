@@ -2,7 +2,7 @@ name: Update ICS File
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # Dieser Cron-Job läuft alle 5 Minuten
+    - cron: '*/10 * * * *' # Dieser Cron-Job läuft alle 5 Minuten
   workflow_dispatch: # Ermöglicht manuelles Auslösen
 
 jobs:
