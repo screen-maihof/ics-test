@@ -9,12 +9,16 @@ jobs:
   update-ics:
     runs-on: ubuntu-latest
 
-runs:
-  using: 'node20'
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3 # Aktualisiert auf die neueste Version
+      
+    - name: Setup Node.js 20
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
 
     - name: Download ICS file
       run: |
